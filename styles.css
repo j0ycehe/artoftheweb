@@ -1,0 +1,54 @@
+.container {
+    background-image: url("images/dining-map.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#dining-map {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 100vh;
+    height: auto;
+}
+
+h1 {
+    font-size: 10vh;
+    cursor: help;
+    font-family: 'IBM Plex Sans', 'Red Hat Display', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* border: 1px solid black; */
+    
+}
+
+/* #fixed-position-wrapper-1 {
+    position: fixed;
+    
+    width: 25vh;
+    height: 25vh;
+    background-color: #000000;
+  }
+   */
+  #absolute-position-wrapper-2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  #absolute-div-2 {
+    position: absolute;
+    bottom: 0px;
+    left: calc(50vw - 12.5vh);
+    width: 25vh;
+    height: 25vh;
+    background-color: #ff0000;
+  }
