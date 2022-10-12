@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-direction: row;
     padding-left: 1em;
-    align-items: center;
+    align-items:baseline;
 }
 
 h1 {
@@ -23,6 +23,7 @@ h2 {
     /* border: black solid 1px; */
 }
 
+
 a {
     font-size: 1em;
     font-family: "Roboto";
@@ -32,6 +33,13 @@ a {
     padding: 0;
     margin-right: 20px;
     margin-left: auto;
+}
+
+#back {
+    font-size: 14px;
+    color: grey;
+    font-family: "Roboto Condensed";
+    font-weight: 300;
 }
 
 #waffle-link {
@@ -49,7 +57,7 @@ a {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    top: 18px;
     left: 0;
     background-color: red;
     transform-origin: bottom right;
