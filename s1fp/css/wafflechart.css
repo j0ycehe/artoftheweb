@@ -23,6 +23,14 @@ h2 {
     /* border: black solid 1px; */
 }
 
+#back {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+}
+
 body {
     background-color: rgb(33, 22, 22);
 }
