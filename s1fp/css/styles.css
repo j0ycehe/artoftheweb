@@ -56,3 +56,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.redirect {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  fill: rgb(131, 0, 0);
+}
