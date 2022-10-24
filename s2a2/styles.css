@@ -1,0 +1,141 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Inter;
+    color: white;
+    font-size: 5vh;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-shadow: 0 0 8px white;
+    animation: float 3s infinite;
+}
+
+p {
+    font-family: "Roboto";
+    color: rgb(212, 212, 212);
+
+}
+
+h2 {
+    font-family: Inter;
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+    transform: rotate(-30deg) skew(45deg) translate(50px, 40px);
+    opacity: 0;
+}
+
+.thumbnail-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;  
+    /* animation: float 3s infinite;  */
+}
+
+.cover-wrapper {
+    margin: -20px;
+}
+
+img {
+    max-height: 25vh;
+    transform: rotate(-30deg) skew(45deg);
+    padding: 0;
+    margin: -40px;
+    /* border: red 1px solid; */
+    
+}
+
+img:hover {
+    box-shadow:
+    0 0 50px #fff,
+    10px 0 80px #0ff;
+}
+
+img:hover ~ .caption {
+    opacity: 100;
+}
+
+.cover-wrapper:hover ~ .cover-wrapper {
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+}
+
+
+body {
+    height: 140vh;
+    background-color: black;
+    background-image: linear-gradient(to top, #03080f, #0a0f16, #10151c, #151923, #191d29);}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 3vh;
+}
+
+.lightbox p {
+    font-size: 2vh;
+}
+
+.bio-wrapper {
+    position: absolute;
+    bottom: 10vh;
+    margin-left: 30px;
+}
+
+.lightbox {
+    display: none;
+    font-family: Inter;
+    color:white;
+  
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    padding: 1em;
+  
+    background: rgba(0, 0, 0, 0.8);
+}
+  
+.lightbox:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.lightbox span {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
