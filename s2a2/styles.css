@@ -36,10 +36,12 @@ h2 {
     margin-top: 20vh;
     margin-bottom: 20vh;  
     /* animation: float 3s infinite;  */
+    
 }
 
 .cover-wrapper {
     margin: -20px;
+    
 }
 
 img {
@@ -59,6 +61,14 @@ img:hover {
 
 img:hover ~ .caption {
     opacity: 100;
+}
+
+.cover-wrapper {
+    transition: 1s;
+}
+
+.cover-wrapper:hover {
+    transform: translateX(-10px);
 }
 
 .cover-wrapper:hover ~ .cover-wrapper {
@@ -138,4 +148,16 @@ h3 {
     100% {
         transform: translateY(5px);
     }
+}
+
+.genres {
+    color:white;
+    font-size: 15px;
+    margin-top: -30px;
+    /* border: white 1px solid; */
+
+}
+
+.genres #pop-controller:hover {
+    color: black;
 }
