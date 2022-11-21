@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.script {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    align-items: flex-start;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.function {
+    margin-left: 20px;
+}
+.function p {
+    margin-bottom: -15px;
+}
+
+.indent1 {
+    margin-left: 20px;
+}
+
+.indent2 {
+    margin-left: 40px;
+}
