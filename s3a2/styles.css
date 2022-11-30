@@ -5,34 +5,84 @@
     align-items: center;
     justify-content: center;
     font-family: Montserrat, sans-serif;
-    font-size: 30px;
     position: relative;
     width: 100vw;
     height: 100vh;
 }
 
-h1 {
+.applet h1 {
     font-size: 4vh;;
     margin: 0;
 }
 
-h4 {
+.applet h4 {
     font-size: 4vh;
     margin-bottom: 0;
 }
 
-h2 {
+.applet h2 {
     margin-left: 4vw;
     margin-right: 4vw;
     font-size: 5vh;
     color: rgb(3, 127, 252);
 }
 
-p {
+.applet p {
     font-weight: light;
     font-size: 2vh;
 }
 
 #connect {
     width: 40vh;
+}
+
+.demo {
+    width: 100vw;
+    height: 100vh;
+    font-weight: light;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#our-app {
+    font-weight: inherit;
+}
+
+#in-action {
+    margin-left: 7px;
+}
+
+.header {
+    display: flex;
+    margin-top: 30px;
+}
+
+.demo p {
+    width: 40vw;
+    margin-bottom: 0;
+}
+
+.pics {
+    position: relative;
+    top: 4vh;
+}
+
+.pics img {
+    height: auto;
+    max-width: 26vh; 
+    margin: 50px;
+    
+}
+
+.pics img:hover {
+    box-shadow:
+    0 0 50px 1px #fff,  /* inner white */
+    0 0 50px 15px rgb(3, 127, 252); /* middle magenta */
+    transition: 0.2s ease-in-out;
+    transform: translateY(-5px);
 }
