@@ -9,31 +9,30 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    margin-top: 5vh;
 }
 
 h1 {
-    font-size: 4vw;;
+    font-size: 4vh;;
     margin: 0;
 }
 
 h4 {
-    font-size: 4vw;
+    font-size: 4vh;
     margin-bottom: 0;
 }
 
 h2 {
     margin-left: 4vw;
     margin-right: 4vw;
-    font-size: 5vw;
+    font-size: 5vh;
     color: rgb(3, 127, 252);
 }
 
 p {
     font-weight: light;
-    font-size: 2vw;
+    font-size: 2vh;
 }
 
 #connect {
-    width: 40vw;
+    width: 40vh;
 }
