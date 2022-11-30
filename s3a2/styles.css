@@ -1,1 +1,39 @@
+.applet {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5vh;
+}
 
+h1 {
+    font-size: 4vw;;
+    margin: 0;
+}
+
+h4 {
+    font-size: 4vw;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-size: 5vw;
+    color: rgb(3, 127, 252);
+}
+
+p {
+    font-weight: light;
+    font-size: 2vw;
+}
+
+#connect {
+    width: 40vw;
+}
