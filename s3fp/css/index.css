@@ -1,0 +1,154 @@
+canvas {
+    z-index: 1;
+    transform: scale(1.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(75, 75, 75);
+}
+
+#headline {
+    margin-top: 50vh;
+}
+
+h1 {
+    position: relative;
+    z-index: 2;
+    font-family: 'Jost';
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top:0;
+    font-family: 'Jost';
+    color: rgb(138, 208, 255);
+    /* color: black; */
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Jost';
+    position: relative;
+    top: 30vh;
+    /* color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+}
+
+#intro {
+    width: 41vw;
+    margin-left: 10vw;
+}
+
+.project {
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project:hover {
+    color:rgb(186, 227, 255);
+    background-color: black;
+}
+
+.thumbnail {
+    z-index: -1;
+    position: relative;
+    width: 10vw;
+    height: auto;
+    left: -900vw;
+}
+
+#seagull {
+    position: absolute;
+    top: 120px;
+    left: 60vw;
+}
+
+#seagull:hover + .thumbnail {
+    position: relative;
+    left: 61vw;
+}
+
+#still-life {
+    position: relative; 
+    top: 180px;
+    left: 30vw;
+}
+
+#still-life:hover + .thumbnail {
+    position: relative;
+    left: 25vw;
+    top: 250px;
+}
+
+#fan-page {
+    position: relative; 
+    top: 80vh;
+    right: -58vw;
+
+}
+
+#fan-page:hover + .thumbnail {
+    position: relative;
+    top: 85vh;
+    left: 50vw;
+}
+
+#spotify {
+    position: relative; 
+    top: 100vh;
+    left: -40vw;
+}
+
+#spotify:hover + .thumbnail {
+    position: relative;
+    top: 100vh;
+    left: -53vw;
+}
+
+#clock {
+    position: relative; 
+    top: 150vh;
+}
+
+#clock:hover + .thumbnail {
+    position: relative;
+    top: 156vh;
+    left: -5vw;
+}
+
+#performance {
+    position: relative; 
+    top: 200vh;
+}
+
+#performance:hover + .thumbnail {
+    position: relative;
+    top: 205vh;
+    left: -8vw;
+}
+
+#ifttt {
+    position: relative; 
+    top: 220vh;
+    left: 2vw;
+}
+
+#ifttt:hover + .thumbnail {
+    position: relative;
+    top: 225vh;
+    left: -3vw;
+}
