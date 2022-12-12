@@ -4,11 +4,13 @@ let petalLen;
 let phiMode = true;
 
 function setup() {
-  createCanvas(windowWidth - 100, windowHeight);
+  let canvas = createCanvas(0.9*windowWidth, windowHeight);
+  canvas.parent('sketch-container');
   angleMode(RADIANS);
   strokeC = color(random(255), random(255), random(255));
   bgC = color(random(255), random(255), random(255));
-  petalLen = width/5;
+  petalLen = min(width, height) / 10;
+  myFont = loadFont('Rubik-Regular.ttf');
 
   strokeWeight(5);
 }
@@ -17,7 +19,7 @@ function draw() {
   background(bgC);
   stroke(strokeC);
   
-  let roundness = map(mouseX, 0, width, 0, width/3);
+  let roundness = map(mouseX, 0, width, 0, height/3);
   let numPetals = map(mouseY, 0, width, 1, 20);
   push()
   noStroke();
@@ -26,7 +28,8 @@ function draw() {
   } else {
     fill(0);
   }
-  text("Number of Petals: " + numPetals, 10, width/19);
+  textFont(myFont);
+  text("Number of Petals: " + round(numPetals, 5), 10, height/19);
   pop()
   
   translate(width/2, height/2);
@@ -61,16 +64,11 @@ function mode2(np, ro) {
   endShape(CLOSE);
 }
 
-function keyPressed() {
-  if (keyCode === UP_ARROW) {
-    petalLen += 1;
-  } else if (keyCode === DOWN_ARROW && petalLen >= 1) {
-    petalLen -= 1;
-  }
-}
-
 function mousePressed() {
-  bgC = color(random(255), random(255), random(255));
+  if(mouseX < width) {
+    bgC = color(random(255), random(255), random(255));
+    strokeC = color(random(255), random(255), random(255));
+  }
 }
 
 function toggleMode() {
