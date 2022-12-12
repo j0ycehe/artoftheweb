@@ -19,6 +19,7 @@ body {
   border: none;
   transition: 0.3s;
   font-family: 'Rubik';
+  text-align: center;
 }
 
 .button:hover {
