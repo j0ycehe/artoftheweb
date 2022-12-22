@@ -1,6 +1,5 @@
 canvas {
     z-index: 1;
-    transform: scale(1.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -119,6 +118,23 @@ h2 {
     left: -53vw;
 }
 
+#readings {
+    position: absolute;
+    width: 30vw;
+    top: 200vh;
+    left: 20vw;
+}
+
+#readings a {
+    text-decoration: none;
+    color: white;
+}
+
+#readings a:hover {
+    text-decoration: none;
+    color: rgb(191, 125, 229);
+}
+
 #clock {
     position: relative; 
     top: 150vh;
@@ -151,4 +167,16 @@ h2 {
     position: relative;
     top: 225vh;
     left: -3vw;
+}
+
+#petals {
+    position: relative; 
+    top: 210vh;
+    left: 50%;
+}
+
+#petals:hover + .thumbnail {
+    position: relative;
+    top: 215vh;
+    left: 44%;
 }
