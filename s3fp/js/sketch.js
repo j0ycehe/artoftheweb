@@ -58,8 +58,8 @@ function shrinkCircle() {
 
 function drawArrow() {
   let s = 50;
-  let offsetX = 90;
-  let offsetY = 50;
+  let offsetX = 0;
+  let offsetY = 0;
   push();
   strokeWeight(40);
   strokeCap(SQUARE);
